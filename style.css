@@ -131,8 +131,9 @@ body {
     flex-direction: column;
     justify-content: center;
     border-radius: 10px;
-    border: 2px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.536);
     box-shadow: 3px 3px 7px #0000007b;
+    margin-bottom: 7px;
 
     p {
         font-family: var(--font1);
@@ -165,6 +166,7 @@ body {
     background-repeat: no-repeat;
     height: 30px;
     filter: drop-shadow(2px 2px 4px yellow);
+
 }
 
 #serv1 {
@@ -177,4 +179,88 @@ body {
 
 #serv3 {
     background-image: url(image/analysis.png);
+}
+#servtext{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-family: var(--font1);
+    text-align: center;
+    font-size: 1.7em;
+   padding-top: 20px;
+}
+
+#textcarrossel{
+    text-align: center;
+    font-size: 1.5em;
+    font-family: var(--font1);
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+padding: 5px;
+    font-weight: bold;
+}
+.container-carrossel{
+width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #ffffff;
+}
+.carrossel{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1.2rem;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    width: 70%;
+    border-radius: 10px;
+}
+.card{
+    background-color: rgb(0, 0, 0);
+   width: 250px;
+   height: 300px;
+    scroll-snap-align: center ;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+
+    p{
+    font-family: var(--font1);
+    font-size: .8em;    
+    padding: 20px;
+    text-align: justify;
+    }
+
+    strong{
+     font-size: 1.2em;
+     text-shadow: 1px 1px 5px yellow;
+        color: yellow;
+    }
+}
+
+#card1,
+#card2,
+#card3,
+#card4{
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+width: 250px;
+height: 140px;
+}
+
+#card1{
+background-image: url(image/ana.jpg);
+}
+#card2{
+background-image: url(image/carlos.jpg);
+}
+#card3{
+background-image: url(image/mariana.jpg);
+}
+#card4{
+background-image: url(image/pedro.jpg);
 }
