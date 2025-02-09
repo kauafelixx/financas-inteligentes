@@ -264,3 +264,36 @@ background-image: url(image/mariana.jpg);
 #card4{
 background-image: url(image/pedro.jpg);
 }
+
+.sobre-nos{
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    overflow-y: auto;
+    h2{
+        color: yellow;
+        font-family: var(--font1);
+        font-size: 1.5em;
+        text-align: justify;
+        padding: 10px;
+        text-shadow: 1px 1px 3px yellow;
+    }
+    p{
+        font-family: var(--font1);
+        padding: 20px;
+        font-size: .9em;
+        text-align: justify;
+    }
+    a{
+    color: yellow;
+font-family: var(--font1);
+padding: 10px;
+margin-left: 20px;
+font-size: .9em;
+font-weight: 300;
+text-decoration: underline;
+    }
+    strong{
+        text-decoration: underline yellow;
+    }
+}
