@@ -13,7 +13,7 @@
 }
 
 body {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     color: #ffffff;
 }
 
@@ -180,26 +180,28 @@ body {
 #serv3 {
     background-image: url(image/analysis.png);
 }
-#servtext{
+
+#servtext {
     background-color: #ffffff;
     color: rgb(0, 0, 0);
     font-family: var(--font1);
     text-align: center;
     font-size: 1.7em;
-   padding-top: 20px;
+    padding-top: 20px;
 }
 
-#textcarrossel{
+#textcarrossel {
     text-align: center;
     font-size: 1.5em;
     font-family: var(--font1);
     color: rgb(0, 0, 0);
     background-color: #ffffff;
-padding: 5px;
+    padding: 5px;
     font-weight: bold;
 }
-.container-carrossel{
-width: 100vw;
+
+.container-carrossel {
+    width: 100vw;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -207,7 +209,8 @@ width: 100vw;
     padding: 20px;
     background-color: #ffffff;
 }
-.carrossel{
+
+.carrossel {
     display: grid;
     grid-auto-flow: column;
     gap: 1.2rem;
@@ -218,25 +221,28 @@ width: 100vw;
     width: 70%;
     border-radius: 10px;
 }
-.card{
+
+.card {
     background-color: rgb(0, 0, 0);
-   width: 250px;
-   height: 300px;
-    scroll-snap-align: center ;
+    width: 250px;
+    height: 300px;
+    scroll-snap-align: center;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
 
-    p{
-    font-family: var(--font1);
-    font-size: .8em;    
-    padding: 20px;
-    text-align: justify;
+
+    p {
+        font-family: var(--font1);
+        font-size: .8em;
+        padding: 20px;
+        text-align: justify;
+
     }
 
-    strong{
-     font-size: 1.2em;
-     text-shadow: 1px 1px 5px yellow;
+    strong {
+        font-size: 1.2em;
+        text-shadow: 1px 1px 5px yellow;
         color: yellow;
     }
 }
@@ -244,33 +250,39 @@ width: 100vw;
 #card1,
 #card2,
 #card3,
-#card4{
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-width: 250px;
-height: 140px;
+#card4 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 140px;
 }
 
-#card1{
-background-image: url(image/ana.jpg);
-}
-#card2{
-background-image: url(image/carlos.jpg);
-}
-#card3{
-background-image: url(image/mariana.jpg);
-}
-#card4{
-background-image: url(image/pedro.jpg);
+#card1 {
+    background-image: url(image/ana.jpg);
 }
 
-.sobre-nos{
+#card2 {
+    background-image: url(image/carlos.jpg);
+}
+
+#card3 {
+    background-image: url(image/mariana.jpg);
+}
+
+#card4 {
+    background-image: url(image/pedro.jpg);
+}
+
+.sobre-nos {
     overscroll-behavior-x: contain;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
     overflow-y: auto;
-    h2{
+    padding: 20px;
+    background-color: #000000;
+
+    h2 {
         color: yellow;
         font-family: var(--font1);
         font-size: 1.5em;
@@ -278,22 +290,74 @@ background-image: url(image/pedro.jpg);
         padding: 10px;
         text-shadow: 1px 1px 3px yellow;
     }
-    p{
+
+    p {
         font-family: var(--font1);
-        padding: 20px;
+        padding: 30px;
         font-size: .9em;
         text-align: justify;
+        border-left: 1px solid yellow;
+        padding-left: 10px;
     }
-    a{
-    color: yellow;
-font-family: var(--font1);
-padding: 10px;
-margin-left: 20px;
-font-size: .9em;
-font-weight: 300;
-text-decoration: underline;
+
+    a {
+        color: yellow;
+        font-family: var(--font1);
+        padding: 10px;
+        margin-left: 20px;
+        font-size: .9em;
+        font-weight: 300;
+        text-decoration: underline;
     }
-    strong{
+
+    strong {
         text-decoration: underline yellow;
     }
+}
+
+.artigos {
+margin-top: 20px;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-flow: row wrap;
+    width: 100vw;
+
+    #artigo-1,
+    #artigo-2,
+    #artigo-3,
+    #artigo-4{
+        background-color: rgb(255, 255, 255);
+        width: 200px;
+        height:210px;
+    margin: 10px auto;
+        display: flex;
+        flex-direction: row;
+        border: 1px solid rgb(255, 255, 255);
+        justify-content: center;
+        align-items: center;
+box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.522), 1px 1px 1px yellow;      
+        border-radius: 8px;
+       
+    }
+    p{
+        font-family: var(--font1);
+        font-size: .7em;
+    padding: 20px ;
+text-align: justify;
+
+
+
+    }
+    strong{
+        font-size: 1.2em;
+    
+    }
+    a{
+        color: rgb(0, 0, 0);
+        
+        
+    }
+
+
 }
