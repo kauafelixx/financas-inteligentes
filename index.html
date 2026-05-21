@@ -1,135 +1,282 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Consultoria financeira personalizada para organizar renda, metas e investimentos com clareza.">
     <link rel="shortcut icon" href="image/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="home.css">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
-    <title>Finanças Inteligentes - Home page</title>
+    <title>Finanças Inteligentes - Consultoria Financeira</title>
 </head>
 
 <body>
-    <header class="cabecalho">
- <h1>Finanças Inteligentes
+    <header class="site-header">
+        <a class="brand" href="#inicio" aria-label="Finanças Inteligentes - início">
+            <img src="image/logo.png" alt="" class="brand__logo">
+            <span>Finanças Inteligentes</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Navegação principal">
+            <a href="#servicos">Serviços</a>
+            <a href="#depoimentos">Depoimentos</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#artigos">Artigos</a>
+        </nav>
+
+        <a class="btn btn--small" href="#contato">Agendar diagnóstico</a>
     </header>
 
-    <div id="banner">
-        <div id="text">
-            <h1>Gerenciando seu futuro financeiro com <strong>inteligência</strong></h1>
-            <p>Consultoria financeira de confiança para alcançar seus objetivos.</p>
-        </div>
-    </div>
+    <main id="inicio">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero__content">
+                <p class="eyebrow animate-in">Consultoria financeira premium</p>
+                <h1 id="hero-title" class="animate-in">Organize seu dinheiro com estratégia, clareza e segurança.</h1>
+                <p class="hero__copy animate-in">
+                    Consultoria financeira personalizada para transformar renda, metas e investimentos em um plano prático.
+                </p>
 
-    <h1 id="servtext">Nossos Serviços</h1>
-    <div class="container">
-        <div class="serv">
-            <span class="material-symbols-outlined">data_exploration</span>
-            <p><strong>A Consultoria Financeira</strong> oferece orientação especializada para ajudar você a alcançar seus objetivos financeiros, tanto pessoais quanto empresariais. Os consultores financeiros analisam sua situação financeira atual, identificam áreas de melhoria e sugerem estratégias para otimização de suas finanças. Eles podem ajudar com:</p>
-            <ul>
-                <li><strong>Elaboração de Orçamento:</strong> Criação e gestão de um orçamento eficaz para controlar seus gastos e economizar dinheiro.</li>
-                <li><strong>Redução de Dívidas:</strong> Estratégias para reduzir e eliminar dívidas de maneira eficiente.</li>
-                <li><strong>Planejamento Fiscal:</strong> Consultoria sobre como aproveitar benefícios fiscais e reduzir a carga tributária.</li>
-            </ul>
-        </div>
-        <div class="serv fade-in">
-            <span class="material-symbols-outlined">query_stats</span>
-            <p><strong>O Planejamento Financeiro</strong> envolve a criação de planos financeiros personalizados para garantir um futuro seguro e próspero. Este processo inclui:</p>
-            <ul>
-                <li><strong>Avaliação Financeira:</strong> Análise detalhada de sua situação financeira atual, incluindo renda, despesas, ativos e passivos.</li>
-                <li><strong>Definição de Metas:</strong> Estabelecimento de metas financeiras de curto, médio e longo prazo.</li>
-                <li><strong>Estratégias de Poupança e Investimento:</strong> Desenvolvimento de estratégias para poupar dinheiro e investir de forma eficiente.</li>
-                <li><strong>Planejamento para Aposentadoria:</strong> Preparação para garantir uma aposentadoria confortável e segura.</li>
-            </ul>
-        </div>
-        <div class="serv fade-in">
-            <span class="material-symbols-outlined">monitoring</span>
-            <p><strong>No tópico de Investimentos</strong> a ideia é maximizar o crescimento do seu capital através de estratégias eficazes. Isso pode incluir:</p>
-            <ul>
-                <li><strong>Análise de Mercado:</strong> Estudo do mercado financeiro para identificar oportunidades de investimento.</li>
-                <li><strong>Diversificação de Portfólio:</strong> Distribuição de investimentos em diferentes ativos para minimizar riscos.</li>
-                <li><strong>Investimentos em Ações e Títulos:</strong> Avaliação e seleção de ações e títulos que ofereçam um bom potencial de retorno.</li>
-                <li><strong>Investimentos Imobiliários:</strong> Identificação de oportunidades no mercado imobiliário para diversificação e crescimento do capital.</li>
-            </ul>
-        </div>
-    </div>
+                <div class="hero__actions animate-in" aria-label="Ações principais">
+                    <a class="btn" href="#contato">Receber diagnóstico gratuito</a>
+                    <a class="btn btn--ghost" href="#servicos">Ver serviços</a>
+                </div>
 
-    <p id="textcarrossel" class="fade-in">O que nossos clientes dizem?</p>
+                <dl class="hero__proof animate-in" aria-label="Destaques da consultoria">
+                    <div>
+                        <dt>+500</dt>
+                        <dd>planos simulados</dd>
+                    </div>
+                    <div>
+                        <dt>1:1</dt>
+                        <dd>atendimento personalizado</dd>
+                    </div>
+                    <div>
+                        <dt>360</dt>
+                        <dd>curto e longo prazo</dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
 
-    <div class="container-carrossel fade-in">
-        <div class="carrossel">
-            <article class="card">
-                <div id="card1"></div>
-                <p><strong>Ana Souza</strong><br>A consultoria da Finanças Inteligentes transformou minha vida financeira. Agora tenho controle sobre minhas finanças e estou no caminho certo para realizar meus sonhos.</p>
-            </article>
-            <article class="card">
-                <div id="card2"></div>
-                <p><strong>Carlos Mendes</strong><br>Graças ao planejamento financeiro oferecido pela Finanças Inteligentes, consegui organizar minhas economias e planejar minha aposentadoria com tranquilidade.</p>
-            </article>
-            <article class="card">
-                <div id="card3"></div>
-                <p><strong>Mariana Oliveira</strong><br>As estratégias de investimento recomendadas pela Finanças Inteligentes foram essenciais para o crescimento do meu capital. Recomendo fortemente!</p>
-            </article>
-            <article class="card">
-                <div id="card4"></div>
-                <p><strong>Pedro Lima</strong><br>A equipe da Finanças Inteligentes foi extremamente profissional e atenciosa. O suporte que recebi em gestão de dívidas e consultoria empresarial foi excepcional.</p>
-            </article>
-        </div>
-    </div>
+        <section class="section" id="servicos" aria-labelledby="servicos-title">
+            <div class="section__header reveal">
+                <p class="eyebrow">Serviços</p>
+                <h2 id="servicos-title">Planejamento financeiro sem ruído, com decisões mais claras.</h2>
+                <p>Escolha um ponto de partida e receba orientação para transformar intenção em rotina, números e acompanhamento.</p>
+            </div>
 
-    <section class="sobre-nos fade-in">
-        <h2>Sobre Nós</h2>
-        <p>Na <strong>Finanças Inteligentes</strong>, nossa missão é ajudar você a alcançar seus objetivos financeiros de maneira eficaz e inteligente. Com anos de experiência no mercado financeiro, nossa equipe de especialistas está comprometida em oferecer consultoria personalizada e soluções financeiras inovadoras.<br><br><strong>Nossa Visão:</strong> Ser a principal referência em consultoria financeira, proporcionando segurança e prosperidade aos nossos clientes.<br><br><strong>Nossa Missão:</strong> Fornecer orientação financeira de alta qualidade, ajudando nossos clientes a tomar decisões informadas e alcançar o sucesso financeiro.</p>
-    </section>
+            <div class="service-grid stagger-group">
+                <article class="feature-card reveal">
+                    <span class="material-symbols-outlined" aria-hidden="true">data_exploration</span>
+                    <h3>Consultoria financeira</h3>
+                    <p>Diagnóstico da sua vida financeira, orçamento realista e plano de redução de dívidas.</p>
+                    <ul>
+                        <li>Mapeamento de renda e gastos</li>
+                        <li>Prioridades para os próximos 90 dias</li>
+                        <li>Rotina simples de acompanhamento</li>
+                    </ul>
+                </article>
 
-    <section class="artigos">
-        <div id="artigo-1" class="fade-in">
-            <div id="art1"></div>
-            <p><strong>Como economizar dinheiro no dia a dia.</strong><br><br>Aprenda estratégias simples e eficazes para economizar dinheiro no seu dia a dia. Descubra como pequenas mudanças podem gerar grandes economias.</p>
-        </div>
-        <div id="artigo-2" class="fade-in">
-            <div id="art2"></div>
-            <p><strong>Como começar a investir com pouco dinheiro.</strong><br><br>Descubra como iniciar sua jornada de investimentos mesmo com pouco dinheiro. Saiba mais sobre as opções disponíveis para pequenos investidores.</p>
-        </div>
-        <div id="artigo-3" class="fade-in">
-            <div id="art3"></div>
-            <p><strong>Como se preparar financeiramente para a aposentadoria.</strong><br><br>Planeje sua aposentadoria com antecedência para garantir um futuro tranquilo e seguro. Veja nossas dicas de preparação financeira.</p>
-        </div>
-        <div id="artigo-4" class="fade-in">
-            <div id="art4"></div>
-            <p><strong>Conceitos básicos de educação financeira para iniciantes.</strong><br><br>Entenda os conceitos básicos de educação financeira e comece a tomar decisões mais informadas sobre seu dinheiro.</p>
-        </div>
-    </section>
+                <article class="feature-card reveal">
+                    <span class="material-symbols-outlined" aria-hidden="true">query_stats</span>
+                    <h3>Planejamento financeiro</h3>
+                    <p>Metas, reserva de emergência e estratégia para construir segurança ao longo do tempo.</p>
+                    <ul>
+                        <li>Metas de curto, médio e longo prazo</li>
+                        <li>Reserva e aposentadoria</li>
+                        <li>Plano mensal de evolução</li>
+                    </ul>
+                </article>
 
-    <form class="newsletter fade-in">
-        <h1>Assine nosso Boletim Informativo</h1>
-        <p>Receba dicas exclusivas de finanças pessoais, fique atualizado com as últimas notícias e tendências do mercado financeiro, e tenha acesso antecipado a novos artigos do blog. Inscreva-se agora!</p>
+                <article class="feature-card reveal">
+                    <span class="material-symbols-outlined" aria-hidden="true">monitoring</span>
+                    <h3>Investimentos</h3>
+                    <p>Alocação, diversificação e acompanhamento para investir com método, não por impulso.</p>
+                    <ul>
+                        <li>Perfil de risco e objetivos</li>
+                        <li>Carteira diversificada</li>
+                        <li>Revisões estratégicas</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="section section--dark" aria-labelledby="processo-title">
+            <div class="section__header reveal">
+                <p class="eyebrow">Como funciona</p>
+                <h2 id="processo-title">Um processo direto para sair do improviso.</h2>
+                <p>Da primeira conversa ao plano final, cada etapa foi pensada para dar clareza e reduzir decisões confusas.</p>
+            </div>
+
+            <div class="process-grid stagger-group">
+                <article class="process-step reveal">
+                    <span>01</span>
+                    <h3>Diagnóstico</h3>
+                    <p>Entendemos renda, despesas, dívidas, objetivos e hábitos financeiros.</p>
+                </article>
+                <article class="process-step reveal">
+                    <span>02</span>
+                    <h3>Estratégia</h3>
+                    <p>Definimos prioridades, metas e caminhos possíveis para cada momento.</p>
+                </article>
+                <article class="process-step reveal">
+                    <span>03</span>
+                    <h3>Acompanhamento</h3>
+                    <p>Transformamos o plano em rotina com revisões e ajustes práticos.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="depoimentos" aria-labelledby="depoimentos-title">
+            <div class="section__header reveal">
+                <p class="eyebrow">Depoimentos</p>
+                <h2 id="depoimentos-title">Clientes fictícios, resultados que comunicam confiança.</h2>
+                <p>Prova social curta, humana e orientada ao benefício principal de cada serviço.</p>
+            </div>
+
+            <div class="testimonial-track stagger-group" aria-label="Depoimentos de clientes">
+                <article class="testimonial-card reveal">
+                    <img src="image/ana.jpg" alt="Retrato de Ana Souza">
+                    <div>
+                        <h3>Ana Souza</h3>
+                        <p>"Consegui entender para onde meu dinheiro ia e montei uma rotina que finalmente coube na minha vida."</p>
+                    </div>
+                </article>
+
+                <article class="testimonial-card reveal">
+                    <img src="image/carlos.jpg" alt="Retrato de Carlos Mendes">
+                    <div>
+                        <h3>Carlos Mendes</h3>
+                        <p>"O planejamento deixou minha aposentadoria mais concreta. Hoje sei quanto poupar e como acompanhar."</p>
+                    </div>
+                </article>
+
+                <article class="testimonial-card reveal">
+                    <img src="image/mariana.jpg" alt="Retrato de Mariana Oliveira">
+                    <div>
+                        <h3>Mariana Oliveira</h3>
+                        <p>"Parei de investir por indicação solta e passei a seguir uma estratégia alinhada aos meus objetivos."</p>
+                    </div>
+                </article>
+
+                <article class="testimonial-card reveal">
+                    <img src="image/pedro.jpg" alt="Retrato de Pedro Lima">
+                    <div>
+                        <h3>Pedro Lima</h3>
+                        <p>"O diagnóstico mostrou prioridades que eu ignorava. Em poucas semanas, meu orçamento ficou previsível."</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section about" id="sobre" aria-labelledby="sobre-title">
+            <div class="about__media reveal" aria-hidden="true"></div>
+            <div class="about__content reveal">
+                <p class="eyebrow">Sobre nós</p>
+                <h2 id="sobre-title">Estratégia financeira para pessoas que querem decidir melhor.</h2>
+                <p>
+                    A Finanças Inteligentes é uma consultoria fictícia criada para mostrar uma experiência digital mais profissional:
+                    clara, objetiva e focada em conversão. A proposta é traduzir números em decisões possíveis para o dia a dia.
+                </p>
+                <div class="about__highlights">
+                    <span>Clareza antes de complexidade</span>
+                    <span>Planos práticos e mensuráveis</span>
+                    <span>Foco em autonomia financeira</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="artigos" aria-labelledby="artigos-title">
+            <div class="section__header reveal">
+                <p class="eyebrow">Conteúdos</p>
+                <h2 id="artigos-title">Guias rápidos para melhorar suas decisões financeiras.</h2>
+                <p>Artigos curtos para educar o visitante e aproximá-lo da conversão.</p>
+            </div>
+
+            <div class="article-grid stagger-group">
+                <article class="article-card reveal">
+                    <span>Orçamento</span>
+                    <h3>Como economizar dinheiro no dia a dia</h3>
+                    <p>Pequenas mudanças para reduzir desperdícios sem transformar sua rotina em sacrifício.</p>
+                    <a href="#contato">Ler orientação</a>
+                </article>
+
+                <article class="article-card reveal">
+                    <span>Investimentos</span>
+                    <h3>Como começar a investir com pouco dinheiro</h3>
+                    <p>O que organizar antes do primeiro aporte e como evitar decisões por ansiedade.</p>
+                    <a href="#contato">Ler orientação</a>
+                </article>
+
+                <article class="article-card reveal">
+                    <span>Futuro</span>
+                    <h3>Como se preparar para a aposentadoria</h3>
+                    <p>Metas, prazo e consistência para transformar o futuro em um plano acompanhável.</p>
+                    <a href="#contato">Ler orientação</a>
+                </article>
+
+                <article class="article-card reveal">
+                    <span>Educação</span>
+                    <h3>Conceitos básicos de educação financeira</h3>
+                    <p>Uma base simples para entender orçamento, juros, reserva e investimentos.</p>
+                    <a href="#contato">Ler orientação</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="lead-section reveal" id="contato" aria-labelledby="contato-title">
+            <div>
+                <p class="eyebrow">Diagnóstico gratuito</p>
+                <h2 id="contato-title">Receba um plano inicial para organizar suas finanças.</h2>
+                <p>Informe seu e-mail para receber um roteiro simples de diagnóstico financeiro e os próximos passos para começar.</p>
+            </div>
+
+            <form class="lead-form" action="#" method="post">
+                <label for="news">E-mail</label>
+                <div class="lead-form__row">
+                    <input type="email" name="news" id="news" placeholder="seuemail@exemplo.com" autocomplete="email" required>
+                    <button type="submit" id="news-btn">Receber diagnóstico</button>
+                </div>
+                <p>Respeitamos sua privacidade. Seu e-mail será usado apenas para esta comunicação.</p>
+                <p class="lead-form__status" id="lead-status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
         <div>
-            <input type="text" name="news" id="news" placeholder="e-mail">
-            <input type="button" value="Assinar" id="news-btn">
+            <a class="brand brand--footer" href="#inicio" aria-label="Finanças Inteligentes - início">
+                <img src="image/logo.png" alt="" class="brand__logo">
+                <span>Finanças Inteligentes</span>
+            </a>
+            <p>Consultoria financeira fictícia para treino de landing pages premium.</p>
         </div>
-        <p><strong>Respeitamos sua privacidade. Seu e-mail será usado apenas para o envio da newsletter e não será compartilhado com terceiros.</strong></p>
-    </form>
 
-    <footer class="fade-in">
-        <div class="footer-contact">
-            <p>Endereço: Rua Exemplo, 123, Bairro Financeiro, Cidade, Estado</p>
-            <p>Telefone: (11) 1234-5678</p>
-            <p>E-mail: contato@financasinteligentes.com.br</p>
+        <address>
+            Rua Exemplo, 123 - Bairro Financeiro<br>
+            São Paulo, SP<br>
+            <a href="mailto:contato@financasinteligentes.com.br">contato@financasinteligentes.com.br</a>
+        </address>
+
+        <div class="footer-social" aria-label="Redes sociais">
+            <a href="#" target="_blank" rel="noreferrer">
+                <img src="image/facebook.png" alt="Facebook">
+            </a>
+            <a href="#" target="_blank" rel="noreferrer">
+                <img src="image/logotipo-do-linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="#" target="_blank" rel="noreferrer">
+                <img src="image/instagram.png" alt="Instagram">
+            </a>
         </div>
-        <div class="footer-social">
-            <a href="#" target="_blank"><img src="image/facebook.png" alt=""></a>
-            <a href="#" target="_blank"><img src="image/logotipo-do-linkedin.png" alt=""></a>
-            <a href="#" target="_blank"><img src="image/instagram.png" alt=""></a>
-        </div>
-        <div class="footer-copyright">
-            <p>© 2025 Finanças Inteligentes. Todos os direitos reservados.</p>
-        </div>
+
+        <p class="footer-copy">&copy; 2026 Finanças Inteligentes. Todos os direitos reservados.</p>
     </footer>
 
     <script src="anima.js"></script>
 </body>
 
 </html>
-
